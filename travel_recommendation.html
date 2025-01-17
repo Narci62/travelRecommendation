@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Données d'analyse de santé</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <h1><i class="fas fa-plane"></i> TravelBlood</h1>
+    <ul>
+      <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+      <li><a href="./travel_recommendation_about.html" id="contact">About Us</a></li <li><a
+        href="./travel_recommendation_contact.html" id="contact">Contact Us</a></li>
+      <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword"> <i class="fas fa-search"></i> </li>
+      <li><button id='btnSearch1'>Rechercher</button>
+      <li><button id='btnSearch'>Clear</button>
+      </li>
+
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="bloc" style="width: 5%;text-align: center;">
+
+      <div class="vertical-line"></div>
+      
+      <div class="vertical-icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i> 
+        <i class="fab fa-instagram"></i> 
+        <i class="fab fa-youtube"></i>
+        
+      </div>
+      
+    </div>
+    <div class="bloc" style="width: 55%;margin-top:100px;">
+
+      <h1>EXPLORE <br> DREAM <br> DESTINATION</h1>
+      <p style="text-align: justify;">
+        It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing
+        the desired destination that captivates the heart and ignites a sense of wonder.
+      </p>
+
+      <button style="font-weight: bold;width:200px">BOOK NOW </button>
+      
+    </div>
+    <div class="bloc" style=" width: 40%;">
+
+      <div class="searchCondition">
+        <div id="result"></div>
+      </div>
+      
+
+    </div>
+  </div>
+  <script src="./travel_recommendation.js"></script>
+</body>
+
+</html>

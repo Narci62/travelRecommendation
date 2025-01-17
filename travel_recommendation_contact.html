@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Données d'analyse de santé</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <h1><i class="fas fa-plane"></i> TravelBlood</h1>
+    <ul>
+      <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+      <li><a href="./travel_recommendation_about.html" id="contact">About Us</a></li <li><a
+        href="./travel_recommendation_contact.html" id="contact">Contact Us</a></li>
+      </li>
+
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="bloc" style="width: 5%;text-align: center;">
+
+      <div class="vertical-line"></div>
+      
+      <div class="vertical-icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i> 
+        <i class="fab fa-instagram"></i> 
+        <i class="fab fa-youtube"></i>
+        
+      </div>
+      
+    </div>
+    <div class="bloc" style="width: 55%;margin-top:100px;">
+
+      <h1>CONTACT US</h1>
+      
+    </div>
+    <div class="bloc" style=" width: 40%;margin-top: 100px;">
+
+      <div class="searchCondition" style="background-color: rgba(27, 26, 26, 0.479);padding: 5%;">
+
+        <form id="contactForm">
+          <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" style="width: 100%;background-color: transparent;color: white;" required>
+          </div>
+          <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" style="width: 100%;background-color: transparent;color: white;" required>
+          </div>
+          <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" style="width: 100%;background-color: transparent;" required></textarea>
+          </div>
+          <button type="submit" onclick="thankyou()" >Submit</button>
+        </form>
+        <script>
+          function thankyou(){
+              alert('Merci de nous avoir contactés !')
+          }
+        </script>
+        
+      </div>
+      
+
+    </div>
+  </div>
+  <script src="./travel_recommendation.js"></script>
+</body>
+
+</html>
