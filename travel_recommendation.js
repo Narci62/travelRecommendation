@@ -5,7 +5,7 @@ const recommendation = [];
 
 
 function resetForm() {
-  btnSearch.value = "";
+   document.getElementById('conditionInput').value = "";
 }
 
 btnClear.addEventListener('click', resetForm);
