@@ -20,7 +20,43 @@ function searchRecommendation() {
       .then(response => response.json())
       .then(data => {
         console.log(data)
+
+
+        switch (input) {
+          case "country":
+            const countries = data.countries;
+
+            console.log(countries);
+
+
+            resultDiv.innerHTML += `<h2>${input}</h2>`;
+
+            countries.forEach((country)=>{
+              console.log(countries.name);
+              country.cities.forEach((city)=>{
+                resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="hjh">`;
+              });
+
+
+            });
+
+            break;
+
+          case "temple":
+            const temples = data.temples;
+            break;
+
+          case "beach":
+            const beaches = data.beaches;
+            break;
+        
+          default:
+            resultDiv.innerHTML = "Not fund, type countries, temples or beaches";
+            break;
+        }
+
         debugger
+        
         const condition = data.conditions.find(item => item.name.toLowerCase() === input);
 
 
