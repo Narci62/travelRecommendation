@@ -19,8 +19,7 @@ function searchRecommendation() {
     fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
-        console.log(input)
-
+        console.log(input);
 
         switch (input) {
           case "country":
@@ -55,7 +54,7 @@ function searchRecommendation() {
             break;
         }
 
-        debugger
+        /*
         
         const condition = data.conditions.find(item => item.name.toLowerCase() === input);
 
@@ -73,7 +72,7 @@ function searchRecommendation() {
           resultDiv.innerHTML += `<p><strong>Treatment:</strong> ${treatment}</p>`;
         } else {
           resultDiv.innerHTML = 'Condition not found.';
-        }
+        } */
       })
       .catch(error => {
         console.error('Error:', error);
