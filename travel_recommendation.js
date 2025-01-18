@@ -4,9 +4,11 @@ const btnClear = document.getElementById('btnClear');
 const recommendation = [];
 
 
-btnClear.addEventListener('click',()=>{
-  this.value = "";
-});
+function resetForm() {
+  btnSearch.value = "";
+}
+
+btnClear.addEventListener('click', resetForm);
 
 
 function searchRecommendation() {
