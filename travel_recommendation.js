@@ -1,14 +1,12 @@
 console.log('hi')
 const btnSearch = document.getElementById('btnSearch1');
+const btnClear = document.getElementById('btnClear');
 const recommendation = [];
 
 
-function resetForm() {
-  document.getElementById("name").value = "";
-  document.querySelector('input[name="gender"]:checked').checked = false;
-  document.getElementById("age").value = "";
-  document.getElementById("condition").value = "";
-}
+btnClear.addEventListener('click',()=>{
+  this.value = "";
+});
 
 
 function searchRecommendation() {
@@ -23,6 +21,7 @@ function searchRecommendation() {
 
       switch (input) {
         case "country":
+        case "countries":
           const countries = data.countries;
           resultDiv.innerHTML += `<h2>Countries</h2>`;
 
@@ -46,6 +45,7 @@ function searchRecommendation() {
           break;
 
         case "temple":
+        case "temples":
           const temples = data.temples;
           resultDiv.innerHTML += `<h2>Temples</h2>`;
 
@@ -65,6 +65,7 @@ function searchRecommendation() {
           break;
 
         case "beach":
+        case "beaches":
           const beaches = data.beaches;
           resultDiv.innerHTML += `<h2>Beaches</h2>`;
 
